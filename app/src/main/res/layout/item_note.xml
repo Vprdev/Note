@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_list_title"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        ></TextView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_list_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:paddingRight="15dp"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/item_list_Content"
+            android:layout_width="385dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:ellipsize="end"
+
+            android:maxLines="1"
+            android:textSize="14dp"
+            ></TextView>
+    </GridLayout>
+
+
+
+</LinearLayout>
+
+
+<!-- Những id trên để NoteAdapter gọi lại để hiển thị những nội dung của title, date, content-->
